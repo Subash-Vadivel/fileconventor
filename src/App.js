@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './Components/Header.js';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Footer from './Components/Footer';
+import P2w from './Pages/P2w';
+import W2p from './Pages/W2p';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Header/>
+    <Routes>
+      <Route path='/' element={<P2w/>}></Route>
+      <Route exact path='/word2pdf' element={<W2p/>}></Route>
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
+    </>
   );
 }
 

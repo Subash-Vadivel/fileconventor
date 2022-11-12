@@ -1,0 +1,12 @@
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 80vh;
+}
+.head-form{
+    text-align: center;
+    color: #f58634 ;
+    padding-bottom: 10px;
+}

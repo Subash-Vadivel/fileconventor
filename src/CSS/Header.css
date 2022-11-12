@@ -1,0 +1,24 @@
+.nav-special{
+    color:#f58634;
+    font-size: larger;
+}
+.logotext{
+padding-left: 10px;
+color:black;
+font-size: larger;
+}
+.logotext:hover{
+ 
+    color: #f58634;
+}
+.menus{
+color: black;
+}
+.eff{
+    font-size:large;
+    color: black;
+    padding-right: 20px;
+}
+.eff:hover{
+    color:#f58634;
+}
